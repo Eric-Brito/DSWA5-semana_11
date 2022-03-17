@@ -18,16 +18,16 @@ angular.module('ifsp').controller('ContatosController',
 		}
 
 		promise
-		           .then(exibeContatos)
-			   .then(modificaContatos)
-			   .then(AtualizaContatos)
-			   .then(function(contatos) {
-				    $scope.mensagem = {texto: 'Contatos atualizados com sucesso'};
-			   })
-			   .catch(function(erro) {
-               console.log(erro.status);
-			   console.log(erro.statusText);
-			   });
+		        .then(exibeContatos)
+			 .then(modificaContatos)
+			 .then(AtualizaContatos)
+			 .then(function(contatos) {
+				  $scope.mensagem = {texto: 'Contatos atualizados com sucesso'};
+			 })
+			 .catch(function(erro) {
+                         console.log(erro.status);
+			 console.log(erro.statusText);
+			 });
 
 		buscaContatos();
 	});
