@@ -18,16 +18,16 @@ angular.module('ifsp').controller('CursosController',
         }
 
         promise
-        .then(exibeCursos)
-        .then(modificaCursos)
-        .then(AtualizaCursos)
-        .then(function(cursos) {
-             $scope.mensagem = {texto: 'Cursos atualizados com sucesso'};
-        })
-        .catch(function(erro) {
-        console.log(erro.status)
-        console.log(erro.statusText)
-        });
+            .then(exibeCursos)
+            .then(modificaCursos)
+            .then(AtualizaCursos)
+            .then(function(cursos) {
+                 $scope.mensagem = {texto: 'Cursos atualizados com sucesso'};
+            })
+            .catch(function(erro) {
+                console.log(erro.status)
+                console.log(erro.statusText)
+            });
 
         buscaCursos();
     });
