@@ -25,8 +25,8 @@ angular.module('ifsp').controller('CursosController',
                  $scope.mensagem = {texto: 'Cursos atualizados com sucesso'};
             })
             .catch(function(erro) {
-                console.log(erro.status)
-                console.log(erro.statusText)
+                console.log(erro.status);
+                console.log(erro.statusText);
             });
 
         buscaCursos();
