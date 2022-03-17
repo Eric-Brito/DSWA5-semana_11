@@ -18,7 +18,7 @@ angular.module('ifsp').controller('ContatosController',
 		}
 
 		promise
-		       .then(exibeContatos)
+		           .then(exibeContatos)
 			   .then(modificaContatos)
 			   .then(AtualizaContatos)
 			   .then(function(contatos) {
