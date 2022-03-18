@@ -3,9 +3,6 @@ angular.module('ifsp').controller('ContatosController',
         $scope.contatos = [];
         $scope.filtro = '';
         var Contato = $resource('/contatos');
-    	var contatos = $http.get('/contatos');
-		var promise = $http.get('/contatos');
-
         function buscaContatos() {
             Contato.query(
                 function(contatos) {
