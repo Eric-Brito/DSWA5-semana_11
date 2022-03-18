@@ -26,6 +26,32 @@
 
 <button class="btn btn-primary" ng-click='incrementa()'>Novo</button>
 <p>Cursos cadastrados: 4</p>
+<div class="table-responsive ng-scope">
+    <table class="table table-hover">
+        <tbody><tr>
+            <th>CURSO</th>
+            <th>COORDENADOR</th>
+            <th class="text-center">Ação</th>
+        </tr>
+        <!-- ngRepeat: curso in cursos | filter: filtro --><tr ng-repeat="curso in cursos | filter: filtro" class="ng-scope">
+            <td><a ng-href="#/curso/1" class="ng-binding" href="#/curso/1">Engenharia de Produção</a></td>
+            <td class="ng-binding">fabio.teixeira@ifsp.edu.br</td>
+            <td class="text-center"><button ng-click="remove(curso)" class="btn btn-warning">Remover</button></td>
+</tr><!-- end ngRepeat: curso in cursos | filter: filtro --><tr ng-repeat="curso in cursos | filter: filtro" class="ng-scope">
+            <td><a ng-href="#/curso/2" class="ng-binding" href="#/curso/2">Tecnologia em Análise e Desenvolvimento de Sistemas</a></td>
+            <td class="ng-binding">fabiano.teixeira@ifsp.edu.br</td>
+            <td class="text-center"><button ng-click="remove(curso)" class="btn btn-warning">Remover</button></td>
+</tr><!-- end ngRepeat: curso in cursos | filter: filtro --><tr ng-repeat="curso in cursos | filter: filtro" class="ng-scope">
+            <td><a ng-href="#/curso/3" class="ng-binding" href="#/curso/3">Licenciatura em Letras Português/Inglês</a></td>
+            <td class="ng-binding">melissa.teixeira@ifsp.edu.br</td>
+            <td class="text-center"><button ng-click="remove(curso)" class="btn btn-warning">Remover</button></td>
+</tr><!-- end ngRepeat: curso in cursos | filter: filtro --><tr ng-repeat="curso in cursos | filter: filtro" class="ng-scope">
+            <td><a ng-href="#/curso/4" class="ng-binding" href="#/curso/4">Tecnologia em Gestão Pública</a></td>
+            <td class="ng-binding">melissa.teixeira@ifsp.edu.br</td>
+            <td class="text-center"><button ng-click="remove(curso)" class="btn btn-warning">Remover</button></td>
+</tr><!-- end ngRepeat: curso in cursos | filter: filtro -->
+</tbody></table>
+</div>
 <div class="table-responsive">
 <table class="table table-hover">
 <tr><th>CURSO</th><th>COORDENADOR</th><th class="text-center">Ação</th></tr>
